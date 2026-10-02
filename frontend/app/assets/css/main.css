@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: var(--color-pink-500);
+  --color-primary-hover: var(--color-pink-600);
+  --color-accent: var(--color-rose-400);
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white shadow-xl;
+}
+
+.pink-gradient {
+  @apply bg-gradient-to-br from-pink-500 via-rose-500 to-fuchsia-600;
+}
+
+.pink-glow {
+  @apply shadow-lg shadow-pink-500/20;
+}
